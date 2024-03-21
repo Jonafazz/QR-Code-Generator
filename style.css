@@ -1,61 +1,84 @@
-body{
-    background-color: rgb(34, 34, 34);
-    display: flex;
-    justify-content: center;
-}
-.red{
-    /* background-color: red; */
-    height: 700px;
-    width: 700px;
-}
-.green{
-    /* background-color: greenyellow; */
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.yellow{
-    /* background-color: yellow; */
-    height: 56px;
-    width: 700px;
-    position: absolute;
-    top: 200px;
-    display: flex;
-    justify-content: space-around;
+body {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
 }
 
-#QRfoto{
-    position: absolute;
-    top: 300px;
-    left: 700px;
-    width: 180px;
-    height: 180px;
+.red {
+  /* background-color: red; */
+  background-color: rgb(23, 23, 23);
+  box-shadow: 20px 20px 20px 20px inset rgb(15, 15, 15);
+  box-shadow: 20px 20px 20px 20px rgba(51, 4, 66, 0.508);
+
+  position: absolute;
+  top: 66px;
+  border-radius: 50px;
+  height: 600px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.green {
+  /* background-color: greenyellow; */
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yellow {
+  /* background-color: yellow; */
+  height: 56px;
+  width: 700px;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#QRfoto {
+  position: absolute;
+  top: 300px;
+  /* left: 700px;  */
+  /* width: 180px;
+  height: 180px; */
 
 }
-#inputText{
-    border-radius: 3px;
-    background-color: rgb(22, 22, 22);
-    width: 300px;
+
+#inputText {
+  border-radius: 3px;
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+  font-weight: bold;
+  border-color: #7305c7;
+  padding-left: 17px;
+  background-color: rgb(10, 10, 10);
+  width: 300px;
 }
 
+#inputText:hover {
+  border-color: rgba(82, 0, 204, 0.467);
+}
 
+#inputText,
+select {
+  outline: none;
+}
 
 
 .button-66 {
   background-color: #9100FF;
   border-radius: 4px;
   border: 0;
-  box-shadow: rgba(59, 1, 136, 0.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inherit;
-  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 20px;
+  border: 3px solid #9100FF;
   margin: 0;
   min-height: 56px;
   min-width: 120px;
@@ -69,8 +92,15 @@ body{
   transition: all .2s cubic-bezier(.22, .61, .36, 1);
 }
 
-.button-66:hover {
+/* .button-66:hover {
   background-color: #7305c7;
+  transform: translateY(-2px);
+} */
+
+.button-66:hover {
+  background-color: #310353;
+  /* border: 1px solid #7305c7; */
+  border-color: #7305c7;
   transform: translateY(-2px);
 }
 
